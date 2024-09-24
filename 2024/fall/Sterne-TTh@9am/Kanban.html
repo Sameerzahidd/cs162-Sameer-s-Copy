@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Kanban</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .logout {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+        .board {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+        .column {
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            width: 18%;
+            padding: 1rem;
+        }
+        .column h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .task {
+            background-color: white;
+            border-radius: 3px;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TaskFlow Kanban</h1>
+        <button class="logout">Logout</button>
+    </header>
+    
+    <div class="board">
+        <div class="column">
+            <h2>To Do</h2>
+            <div class="task">Design homepage</div>
+            <div class="task">Research competitors</div>
+        </div>
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task">Develop login system</div>
+            <div class="task">Create user dashboard</div>
+        </div>
+        <div class="column">
+            <h2>Review</h2>
+            <div class="task">Test payment gateway</div>
+        </div>
+        <div class="column">
+            <h2>QA</h2>
+            <div class="task">Verify mobile responsiveness</div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div class="task">Set up project repository</div>
+            <div class="task">Define MVP features</div>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 TaskFlow Kanban. All rights reserved.
+    </footer>
+</body>
+</html>
